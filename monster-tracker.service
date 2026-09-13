@@ -1,0 +1,10 @@
+[Unit]
+Description=Monster energy price tracker (one-shot check)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/pi/monster-tracker
+ExecStart=/home/pi/monster-tracker/venv/bin/python /home/pi/monster-tracker/main.py
+User=pi

@@ -1,0 +1,47 @@
+{
+  "discord_webhook_url": "PASTE_YOUR_DISCORD_WEBHOOK_URL_HERE",
+
+  "notify_on": "any",
+
+  "check_interval_minutes": 60,
+
+  "postcode": "7005",
+
+  "stores": {
+    "coles": {
+      "store_id": "FILL_IN_AFTER_RUNNING_find_stores.py",
+      "store_name": "Coles Sandy Bay"
+    },
+    "woolworths": {
+      "store_id": "FILL_IN_AFTER_RUNNING_find_stores.py",
+      "store_name": "Woolworths Sandy Bay"
+    }
+  },
+
+  "products": [
+    {
+      "id": "coles_can",
+      "retailer": "coles",
+      "label": "Monster (single can) - Coles Sandy Bay",
+      "product_id": "FILL_IN_AFTER_RUNNING_find_products.py"
+    },
+    {
+      "id": "coles_4pack",
+      "retailer": "coles",
+      "label": "Monster 4-pack - Coles Sandy Bay",
+      "product_id": "FILL_IN_AFTER_RUNNING_find_products.py"
+    },
+    {
+      "id": "woolworths_can",
+      "retailer": "woolworths",
+      "label": "Monster (single can) - Woolworths Sandy Bay",
+      "product_id": "FILL_IN_AFTER_RUNNING_find_products.py"
+    },
+    {
+      "id": "woolworths_4pack",
+      "retailer": "woolworths",
+      "label": "Monster 4-pack - Woolworths Sandy Bay",
+      "product_id": "FILL_IN_AFTER_RUNNING_find_products.py"
+    }
+  ]
+}

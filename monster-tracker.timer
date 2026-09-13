@@ -1,0 +1,12 @@
+[Unit]
+Description=Run monster-tracker every hour
+
+[Timer]
+# Runs at the top of every hour, with a random 0-5 min jitter so it's
+# not hitting Coles/Woolworths at the exact same second every time.
+OnCalendar=hourly
+RandomizedDelaySec=300
+Persistent=true
+
+[Install]
+WantedBy=timers.target
